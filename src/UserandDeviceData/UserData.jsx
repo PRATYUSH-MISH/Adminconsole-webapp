@@ -289,7 +289,7 @@ const handleMacChange = (e, mac, key) => {
               className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 ml-4"
             >
               {userEditing ? "Cancel" : "Edit"}
-            </button>
+            </button> 
           </div>
         )}
 
@@ -304,60 +304,60 @@ const handleMacChange = (e, mac, key) => {
                 value={data.mnv || ""}
                 onChange={(e) => handleMacChange(e, mac, 'mnv')}
                 disabled={!macEditing[mac]}
-                className="w-full bg-[#494F55] text-white p-2 border border-gray-300 rounded mb-2"
+                className="w-full bg-[#494F55]  text-white p-2 border border-gray-300 rounded mb-2"
               />
             </div>
             <div>
-              <label className="block mb-2">Model:</label>
+              <label className="block mb-2 text-white">Model:</label>
               <input
                 type="number"
                 value={data.model || ""}
                 onChange={(e) => handleMacChange(e, mac, 'model')}
                 disabled={!macEditing[mac]}
-                className="w-full p-2 border border-gray-300 rounded mb-2"
+                className="w-full p-2 border text-white bg-[#494F55] border-gray-300 rounded mb-2"
               />
             </div>
                 
             <div>
-              <label className="block mb-2">Motor ID:</label>
+              <label className="block mb-2 text-white">Motor ID:</label>
               <input
                 type="text"
                 value={data.motor_id || ""}
                 onChange={(e) => handleMacChange(e, mac, 'motor_id')}
                 disabled={!macEditing[mac]}
-                className="w-full p-2 border border-gray-300 rounded mb-2"
+                className="w-full p-2 border text-white bg-[#494F55] border-gray-300 rounded mb-2"
               />
             </div>
 
             <div>
-              <label className="block mb-2">Recharge ID:</label>
+              <label className="block mb-2 text-white">Recharge ID:</label>
               <input
                 type="text"
                 value={data.recharge_id || ""}
                 onChange={(e) => handleMacChange(e, mac, 'recharge_id')}
                 disabled={!macEditing[mac]}
-                className="w-full p-2 border border-gray-300 rounded mb-2"
+                className="w-full p-2 border text-white bg-[#494F55] border-gray-300 rounded mb-2"
               />
             </div>
 
             <div>
-              <label className="block mb-2">Recharge Validity:</label>
+              <label className="block mb-2 text-white">Recharge Validity:</label>
               <input
                 type="number"
                 value={data.recharge_validity|| ""}
                 onChange={(e) => handleMacChange(e, mac, 'recharge_validity')}
                 disabled={!macEditing[mac]}
-                className="w-full p-2 border border-gray-300 rounded mb-2"
+                className="w-full p-2 border text-white bg-[#494F55] border-gray-300 rounded mb-2"
               />
             </div>
 
             <div>
-              <label className="block mb-2">Recharge Status:</label>
+              <label className="block mb-2 text-white">Recharge Status:</label>
               <select
                 value={data.recharge_status ? "true" : "false"}
                 onChange={(e) => handleMacChange(e, mac, 'recharge_status')}
                 disabled={!macEditing[mac]}
-                className="w-full p-2 border border-gray-300 rounded mb-2"
+                className="w-full p-2 border text-white bg-[#494F55] border-gray-300 rounded mb-2"
               >
                 <option value="true">True</option>
                 <option value="false">False</option>

@@ -33,58 +33,58 @@ export const Uiii = ({ deviceData, editData, isEditing, handleInputChange, toggl
                 </div>
                 {/* Card 1 starts */}
                 <div className='flex w-full justify-center items-center '>
-                <div className="w-full max-w-sm px-4 py-3 bg-white rounded-md shadow-md dark:bg-gray-800">
+                <div className="w-full max-w-sm px-4 py-3 bg-[#333333] rounded-md shadow-md dark:bg-gray-800">
                     <div className="flex-col items-center justify-between ">
-                        <h2 className="text-sm font-semibold  ">MAC: {macadd}</h2>
-                        <h2  className="text-sm font-semibold ">Model:{model}</h2>
-                        <h2  className="text-sm font-semibold ">Serial No:{serialNo}</h2>
+                        <h2 className="text-sm font-semibold text-white  ">MAC: {macadd}</h2>
+                        <h2  className="text-sm font-semibold text-white  ">Model:{model}</h2>
+                        <h2  className="text-sm font-semibold text-white ">Serial No:{serialNo}</h2>
                     </div>
 
                     <div>
                         <div>
-                            <label className="block mb-1 text-xs">Date:</label>
+                            <label className="block mb-1 text-xs text-white ">Date:</label>
                             <input
                             type="text"
                             name="d.d.d"
                             value={editData.d?.d?.d || ""}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-1 font-medium border text-white  bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
                         </div>
 
                         <div>
-                            <label className="block mb-1 text-xs">Feedback:</label>
+                            <label className="block mb-1 text-xs text-white ">Feedback:</label>
                             <input
                             type="number"
                             name="d.c.f"
                             value={editData.d?.c?.f || ""}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-1 font-medium border text-white  bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
 
                         </div>
                         <div>
-                            <label className="block mb-1 text-xs">Device Mode:</label>
+                            <label className="block mb-1 text-xs text-white ">Device Mode:</label>
                              <input
                             type="text"
                             name="d.c.m"
                             value={editData.d?.c?.m || ""}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-1 font-medium border text-white  bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
                         </div>
 
                         <div>
-                             <label className="block mb-1 text-xs">Blue Phase:</label>
+                             <label className="block mb-1 text-xs text-white ">Blue Phase:</label>
                             <select
                             name="d.v.b"
                             value={editData.d?.v?.b ? "Yes" : "No"}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-2 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-2 mb-1 font-medium border text-white  bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             >
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
@@ -92,13 +92,13 @@ export const Uiii = ({ deviceData, editData, isEditing, handleInputChange, toggl
                         </div>
 
                         <div>
-                             <label className="block mb-2 text-xs">Red Phase:</label>
+                             <label className="block mb-2 text-xs text-white ">Red Phase:</label>
                             <select
                             name="d.v.r"
                             value={editData.d?.v?.r ? "Yes" : "No"}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-1 font-medium border text-white  bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                              >
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
@@ -106,53 +106,53 @@ export const Uiii = ({ deviceData, editData, isEditing, handleInputChange, toggl
                         </div>
 
                         <div>
-                            <label className="block mb-2 text-xs">Yellow Phase:</label>
+                            <label className="block mb-2 text-xs text-white ">Yellow Phase:</label>
                             <select
                             name="d.v.y"
                             value={editData.d?.v?.y ? "Yes" : "No"}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-2 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-2 font-medium border text-white  bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             >
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
                             </select>
                         </div>
                         <div>
-                            <label className="block mb-2 text-xs">Voltage:</label>
+                            <label className="block mb-2 text-xs text-white ">Voltage:</label>
                             <input
                             type="text"
                             name="d.v.v"
                             value={editData.d?.v?.v || ""}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-2 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-2 font-medium border text-white  bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                            />
                         </div>
                         <div>
-                            <label className="block mb-2 text-xs">Voltage Fault:</label>
+                            <label className="block mb-2 text-xs text-white ">Voltage Fault:</label>
                             <select
                             name="d.v.vf"
                             value={editData.d?.v?.vf ? "Yes" : "No"}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-1 font-medium border text-white  bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             >
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
                            </select>
                         </div>
 
-                        <h2 className="text-sm font-bold mb-2">Instruction</h2>
+                        <h2 className="text-sm font-bold mb-2 text-white ">Instruction</h2>
                         <div>
-                            <label className="block mb-2 text-xs">Instruction Motor command:</label>
+                            <label className="block mb-2 text-xs text-white ">Instruction Motor command:</label>
                             <input
                             type="text"
                             name="i.m.m"
                             value={isEditing ? editData.i?.m?.m || "" : deviceData.i?.m?.m || "N/A"}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-1 font-medium border text-white  bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
                         </div>
 
@@ -169,102 +169,102 @@ export const Uiii = ({ deviceData, editData, isEditing, handleInputChange, toggl
 
                 {/* card 2 starts */}
 
-                <div className="w-full max-w-sm m-5 px-4 py-3 bg-white rounded-md shadow-md dark:bg-gray-800">
+                <div className="w-full max-w-sm m-5 px-4 py-3 bg-[#333333] rounded-md shadow-md dark:bg-gray-800">
                     <div className="flex items-center justify-between">
-                        <h2 className="text-sm font-bold mb-1">Protection</h2>
+                        <h2 className="text-sm font-bold mb-1 text-white ">Protection</h2>
                     </div>
 
                     <div>
 
                         <div>
-                            <label className="block mb-1 text-xs">Protection Mode:</label>
+                            <label className="block mb-1 text-xs text-white ">Protection Mode:</label>
                             <input
                             type="text"
                             name="i.p.p"
                             value={isEditing ? editData.i?.p?.p || "" : deviceData.i?.p?.p || "N/A"}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-1 bg-[#494F55] text-white  font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
                         </div>
 
-                        <h2 className="text-sm font-bold mb-1">Initials</h2>
+                        <h2 className="text-sm font-bold mb-1 text-white ">Initials</h2>
                         <div>
-                            <label className="block mb-1 text-xs">Delay Time:</label>
+                            <label className="block mb-1 text-xs text-white ">Delay Time:</label>
                             <input
                             type="text"
                             name="in.dt"
                             value={isEditing ? editData.in?.dt || "" : deviceData.in?.dt || "N/A"}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-1 text-white  bg-[#494F55] font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
                         </div>
 
                         <div>
-                            <label className="block mb-1 text-xs">Minimum Voltage:</label>
+                            <label className="block mb-1 text-xs text-white ">Minimum Voltage:</label>
                             <input
                             type="text"
                             name="in.mnv"
                             value={isEditing ? editData.in?.mnv || "" : deviceData.in?.mnv || "N/A"}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-1 bg-[#494F55] text-white  font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
                         </div>
                         <div>
-                            <label className="block mb-1 text-xs">Phase:</label>
+                            <label className="block mb-1 text-xs text-white ">Phase:</label>
                             <input
                             type="text"
                             name="in.p"
                             value={isEditing ? editData.in?.p || "" : deviceData.in?.p || "N/A"}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-1 text-white  bg-[#494F55] font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                              />
                         </div>
                         <div>
-                            <label className="block mb-1 text-xs">Model Data For Server:</label>
+                            <label className="block mb-1 text-xs text-white ">Model Data For Server:</label>
                             <input
                             type="text"
                             name="m.m"
                             value={isEditing ? editData.m?.m || "" : deviceData.m?.m || "N/A"}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-1 text-white  bg-[#494F55] font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
                         </div>
 
                         <div>
-                            <label className="block mb-1 text-xs">Model:</label>
+                            <label className="block mb-1 text-xs text-white ">Model:</label>
                              <input
                             type="text"
                             name="model"
                             value={isEditing ? editData.model || "" : deviceData.model || "N/A"}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-1 font-medium border text-white  bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
                         </div>
                         <div>
-                            <label className="block mb-2 text-xs">Network:</label>
+                            <label className="block mb-2 text-xs text-white ">Network:</label>
                             <input
                             type="text"
                             name="n"
                             value={isEditing ? editData.n || "" : deviceData.n || "N/A"}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-1 font-medium text-white  bg-[#494F55] border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
                         </div>
                         <div>
-                            <label className="block mb-2 text-xs">Power:</label>
+                            <label className="block mb-2 text-xs text-white ">Power:</label>
                             <select
                             name="power"
                             value={isEditing ? (editData.power ? "Yes" : "No") : (deviceData.power ? "Yes" : "No")}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-1 font-medium text-white  border bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             >
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
@@ -272,26 +272,26 @@ export const Uiii = ({ deviceData, editData, isEditing, handleInputChange, toggl
                         </div>
 
                         <div>
-                            <label className="block mb-2 text-xs">Pressure available:</label>
+                            <label className="block mb-2 text-xs text-white ">Pressure available:</label>
                             <select
                             name="in.pa"
                             value={isEditing ? (editData.in?.pa ? "Yes" : "No") : (deviceData.in?.pa ? "Yes" : "No")}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-1 font-medium border text-white  bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             >
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
                             </select>
                         </div>
                         <div>
-                            <label className="block mb-2 text-xs">Recharge:</label>
+                            <label className="block mb-2 text-xs text-white ">Recharge:</label>
                             <select
                             name="in.r"
                             value={isEditing ? (editData.in?.r ? "Yes" : "No") : (deviceData.in?.r ? "Yes" : "No")}
                             onChange={handleInputChange}
                             disabled={!isEditing}
-                            className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full p-1 mb-1 font-medium border text-white  bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                             >
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>

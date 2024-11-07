@@ -10,7 +10,7 @@ const Portal = ({ children, onClose }) => {
     return createPortal(
         <div onClick={handleBackdropClick}
         className="fixed  inset-0 flex items-center justify-center backdrop-blur-sm bg-black bg-opacity-50 z-50 ">
-            <div className="bg-white p-6 rounded-lg shadow-lg dark:bg-gray-900">
+            <div className="bg-[#333333] p-6 rounded-lg shadow-lg dark:bg-gray-900">
                 {children}
               
                 <div className="mt-3 flex justify-center">

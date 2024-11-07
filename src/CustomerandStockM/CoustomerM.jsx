@@ -280,11 +280,11 @@ const CustomerM = () => {
             className="border text-white p-2 mb-4 bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
-        <div className="flex flex-col">
-          <div className="-mx-3  -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-            <div className="inline-block w-[100%] py-2 align-middle md:px-6 lg:px-8">
-              <div className="overflow-hidden border rounded-lg border-gray-200 dark:border-gray-700 md:rounded-lg">
-                <table className="min-w-full divide-y  divide-gray-200  dark:divide-gray-700">
+        <div className="flex flex-col ">
+          <div className="-mx-3  -my-2 overflow-x-auto  sm:-mx-6 lg:-mx-8">
+            <div className="inline-block w-[100%] py-2  align-middle md:px-6 lg:px-8">
+              <div className="overflow-hidden border  border-gray-200 dark:border-gray-700 md:rounded-lg">
+                <table className="min-w-full divide-y rounded-xl  divide-gray-200  dark:divide-gray-700">
                   <thead className="rounded-xl bg-[#2F2F2F] text-white dark:bg-gray-800">
                     <tr>
                       <th scope="col" className=" py-3.5 px-2 text-sm font-normal text-left rtl:text-right  dark:text-gray-400">
@@ -454,52 +454,52 @@ const CustomerM = () => {
       {isAddingOrder && (
         <Portal onClose={() => setIsAddingOrder(null)}>
           <ToastContainer/>
-          <h2 className="text-sm font-semibold">Add New Order</h2>
+          <h2 className="text-sm font-semibold text-white">Add New Order</h2>
         
-          <div className="mt-4">
+          <div className="mt-4 ">
             {/* Form fields */}
 
             <div className='flex whitespace-nowrap'>
-              <strong className='font-thin text-xs mt-2'>Cust ID: </strong>
+              <strong className='font-thin text-xs mt-2 text-white'>Cust ID: </strong>
               <input
                 type="text"
                 name="customerId"
                 value={orderData.customerId || ''}
                 onChange={handleNewOrderData}
-                className="ml-4 border block w-full rounded mb-2 px-3 py-1 my-1 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
+                className="ml-4 border bg-[#494F55] block w-full rounded mb-2 px-3 py-1 my-1 text-sm font-normal text-left rtl:text-right text-white dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
                 placeholder="CustomerId"
               />
             </div>
             <div className='flex'>
-              <strong className='font-thin text-xs mt-2'>Name: </strong>
+              <strong className='font-thin text-xs mt-2 text-white'>Name: </strong>
               <input
                 type="text"
                 name="name"
                 value={orderData.name || ''}
                 onChange={handleNewOrderData}
-                className="ml-6 block w-full px-3 py-1 rounded my-1 border text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
+                className="ml-6 block w-full px-3 py-1 bg-[#494F55] rounded my-1 border text-sm font-normal text-left rtl:text-right text-white dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
                 placeholder="Name"
               />
             </div>
             <div className='flex'>
-              <strong className='font-normal  text-xs mt-2'>Email: </strong>
+              <strong className='font-normal  text-xs mt-2 text-white'>Email: </strong>
               <input
                 type="email"
                 name="email"
                 value={orderData.email || ''}
                 onChange={handleNewOrderData}
-                className="ml-7 block w-full px-4 py-1 rounded my-1 border text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
+                className="ml-7 block w-full px-4 py-1 bg-[#494F55] rounded my-1 border text-sm font-normal text-left rtl:text-right text-white dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
                 placeholder='Email'
               />
             </div>
             <div className='flex'>
-              <strong className='font-thin   text-xs mt-2'>Ship. Address:  </strong>
+              <strong className='font-thin text-white  text-xs mt-2'>Ship. Address:  </strong>
               <input
                 type="text"
                 name="shippingAddress"
                 value={orderData.shippingAddress || ''}
                 onChange={handleNewOrderData}
-                className=" block w-full px-3 py-1 border rounded my-2 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
+                className=" block w-full  px-3 py-1 border text-white bg-[#494F55] rounded my-2 text-sm font-normal text-left rtl:text-right  dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
                 placeholder="Shipping Address"
               />
             </div>
@@ -508,24 +508,24 @@ const CustomerM = () => {
                 type="checkbox"
                 checked={isSameAddress}
                 onChange={handleSameAddressChange}
-                className="form-checkbox"
+                className="form-checkbox "
               />
-              <span className="ml-2 text-xs font-semibold ">Billing address is the same as shipping address</span>
+              <span className="ml-2 text-xs font-semibold text-white">Billing address is the same as shipping address</span>
             </div>
             <div className="flex">
-              <strong className="font-normal text-xs mt-1">Bill. Address: </strong>
+              <strong className="font-normal text-xs mt-1 text-white">Bill. Address: </strong>
               <input
                 type="text"
                 name="billingAddress"
                 value={orderData.billingAddress || ''}
                 onChange={handleNewOrderData}
-                className="ml-3 block w-full px-3 py-1 rounded my-2 border text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
+                className="ml-3 block w-full text-white bg-[#494F55] px-3 py-1 rounded my-2 border text-sm font-normal text-left rtl:text-right  dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
                 placeholder="Billing Address"
                 disabled={isSameAddress}
               />
             </div>
             <div className='flex'>
-              <strong className='font-normal text-xs my-2'>Type: </strong>
+              <strong className='font-normal text-xs my-2 text-white'>Type: </strong>
               <div className="ml-3 flex items-center space-x-3">
                 <label className="flex items-center">
                   <input
@@ -536,7 +536,7 @@ const CustomerM = () => {
                     onChange={handleNewOrderData}
                     className="form-radio"
                   />
-                  <span className="ml-2 text-xs">Individual</span>
+                  <span className="ml-2 text-xs text-white">Individual</span>
                 </label>
                 <label className="flex items-center">
                   <input
@@ -547,7 +547,7 @@ const CustomerM = () => {
                     onChange={handleNewOrderData}
                     className="form-radio"
                   />
-                  <span className="ml-2 text-xs">Business</span>
+                  <span className="ml-2 text-xs text-white">Business</span>
                 </label>
               </div>
             </div>
@@ -555,59 +555,59 @@ const CustomerM = () => {
             {orderData.type === 'Business' && (
               <>
                 <div className='flex'>
-                  <strong className='font-normal text-xs my-2'>Business Name: </strong>
+                  <strong className='font-normal text-xs my-2 text-white'>Business Name: </strong>
                   <input
                     type="text"
                     name="businessName"
                     value={orderData.businessName || ''}
                     onChange={handleNewOrderData}
-                    className="ml-1 block w-full px-2 my-2 rounded border text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
+                    className="ml-1 block w-full px-2 my-2 text-white bg-[#494F55] rounded border text-sm font-normal text-left rtl:text-right  dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
                     placeholder="Business Name"
                   />
                 </div>
                 <div className='flex'>
-                  <strong className='font-normal text-xs my-2'>GST No: </strong>
+                  <strong className='font-normal text-xs my-2 text-white'>GST No: </strong>
                   <input
                     type="text"
                     name="gstNo"
                     value={orderData.gstNo || ''}
                     onChange={handleNewOrderData}
-                    className="ml-8 block w-full px-2 my-2 rounded border text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
+                    className="ml-8 block w-full px-2 my-2 bg-[#494F55] rounded border text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
                     placeholder="GST No."
                   />
                 </div>
               </>
             )}
             <div className='flex'>
-              <strong className='font-normal  text-xs my-2'>Date: </strong>
+              <strong className='font-normal  text-xs my-2 text-white'>Date: </strong>
               <input
                 type="date"
                 name="date"
                 value={orderData.date || ''}
                 onChange={handleNewOrderData}
-                className="ml-9 block w-full px-2 my-2 border rounded text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
+                className="ml-9 block w-full px-2 my-2 bg-[#494F55] border rounded text-sm font-normal text-left rtl:text-right text-white dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
 
               />
             </div>
             <div className='flex whitespace-nowrap'>
-              <strong className='font-normal text-xs my-3'>Ph. No: </strong>
+              <strong className='font-normal text-xs my-3 text-white'>Ph. No: </strong>
               <input
                 type="number"
                 name="phoneNo"
                 value={orderData.phoneNo || ''}
                 onChange={handleNewOrderData}
-                className="ml-6 block w-full px-4 py-1 border rounded my-2 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
+                className="ml-6 block w-full text-white bg-[#494F55] px-4 py-1 border rounded my-2 text-sm font-normal text-left rtl:text-right  dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
                 placeholder="Phone Number"
               />
             </div>
             <div className='flex whitespace-nowrap'>
-              <strong className='font-normal text-xs my-2'> Alt. Ph. No: </strong>
+              <strong className='font-normal text-xs my-2 text-white '> Alt. Ph. No: </strong>
               <input
                 type="number"
                 name="alternatePhoneNo"
                 value={orderData.alternatePhoneNo || ''}
                 onChange={handleNewOrderData}
-                className="ml-1 block w-full px-4 py-1 border rounded text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
+                className="ml-1 block w-full px-4 py-1 text-white bg-[#494F55] border rounded text-sm font-normal text-left rtl:text-right  dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
                 placeholder="Alternate Phone Number"
               />
             </div>
@@ -615,7 +615,7 @@ const CustomerM = () => {
               <button
                 type="button"
                 onClick={addOrder}
-                className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                className="text-white bg-[#2977a4] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-7 py-2.5 text-center  mt-2 "
               >
                 Submit 
               </button>
@@ -716,14 +716,14 @@ const CustomerM = () => {
       {deleteOrder && (
         <Portal onClose={() => setDeleteOrder(null)}>
           <ToastContainer/>
-          <h2 className="text-lg font-semibold">Confirm Deletion</h2>
-          <p className="mt-2">Please <strong>TYPE</strong> the OrderID: {deleteOrder} to Delete.</p>
+          <h2 className="text-lg font-semibold text-white">Confirm Deletion</h2>
+          <p className="mt-2 text-white">Please <strong>TYPE</strong> the OrderID: {deleteOrder} to Delete.</p>
           <input
             type="text"
             value={enteredOrderId}
             onChange={(e) => setEnteredOrderId(e.target.value)}
             onPaste={(e) => e.preventDefault()}
-            className="mt-2 p-2 border border-red-500 active:border-blue-500 rounded-lg w-full  "
+            className="mt-2 p-2 border text-white bg-[#494F55] border-red-500 active:border-blue-500 rounded-lg w-full  "
             placeholder="Enter order ID"
           />
          <div className="mt-3 flex justify-center">

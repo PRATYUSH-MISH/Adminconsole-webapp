@@ -144,7 +144,7 @@ const generatorPassword =()=>{
 
             {/* Users Table */}
             
-            <table className="min-w-full text-white divide-y divide-white dark:divide-gray-700 rounded-xl ">
+            <table className="min-w-full  text-white divide-y divide-white dark:divide-gray-700 rounded-xl ">
                 <thead className="bg-[#2F2F2F] dark:bg-gray-800 rounded-t-xl">
                     <tr>
 

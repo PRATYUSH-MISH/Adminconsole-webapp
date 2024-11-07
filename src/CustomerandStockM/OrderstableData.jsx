@@ -323,7 +323,7 @@ const OrdersNew = () => {
     };
     return (
         <div className="max-w-6xl mx-auto ">  <ToastContainer />
-            <h2 className="text-lg font-semibold my-4">Orders for Customer ID: {orderId} </h2>
+            <h2 className="text-lg font-semibold my-4 text-white">Orders for Customer ID: {orderId} </h2>
             <div className='flex justify-end items-end '>
                 <button type='button'
                     onClick={handleShowAddOrder}
@@ -332,70 +332,70 @@ const OrdersNew = () => {
                     Add Order
                 </button>
             </div>
-            <table className="min-w-full bg-white border border-gray-300  divide-y divide-gray-200 dark:divide-gray-700">
-                <thead className="bg-gray-50 dark:bg-gray-800">
+            <table className="min-w-full bg-[#494F55] border border-gray-300  divide-y divide-gray-200 dark:divide-gray-700">
+                <thead className="bg-[#333333] dark:bg-gray-800  ">
                     <tr>
-                        <th scope="col" className="pl-2 py-3 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <th scope="col" className="border border-gray-300  divide-y divide-gray-200 pl-2  py-3 text-xs font-semibold text-left rtl:text-right text-white dark:text-gray-400">
                             <div className="flex items-center gap-x-3 ">
 
                                 <span>ID</span>
                             </div>
                         </th>
-                        <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-white dark:text-gray-400">
                             <div className="flex items-center gap-x-3">
 
                                 <span>Date</span>
                             </div>
                         </th>
-                        <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                            <div className="flex items-center gap-x-3">
+                        <th scope="col" className="border border-gray-300  divide-y divide-gray-200 px-4 text-xs font-semibold text-left rtl:text-right text-white dark:text-gray-400">
+                            <div className=" flex items-center gap-x-3">
 
                                 <span>Order Items</span>
                             </div>
                         </th>
-                        <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <th scope="col" className="border border-gray-300  divide-y divide-gray-200 px-4 text-xs font-semibold text-left rtl:text-right text-white dark:text-gray-400">
                             <div className="flex items-center gap-x-3">
 
                                 <span>Total Amount</span>
                             </div>
                         </th>
-                        <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <th scope="col" className="border border-gray-300  divide-y divide-gray-200 px-4 text-xs font-semibold text-left rtl:text-right text-white dark:text-gray-400">
                             <div className="flex items-center gap-x-3">
 
                                 <span>Amount Due</span>
                             </div>
                         </th>
-                        <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <th scope="col" className="border border-gray-300  divide-y divide-gray-200 px-4 text-xs font-semibold text-left rtl:text-right text-white dark:text-gray-400">
                             <div className="flex items-center gap-x-3">
 
                                 <span>Invoice ID</span>
                             </div>
                         </th>
-                        <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <th scope="col" className="border border-gray-300  divide-y divide-gray-200 px-4 text-xs font-semibold text-left rtl:text-right text-white dark:text-gray-400">
                             <div className="flex items-center gap-x-3">
 
                                 <span>Channel</span>
                             </div>
                         </th>
-                        <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                            <div className="flex items-center gap-x-3">
+                        <th scope="col" className="border border-gray-300  divide-y divide-gray-200 px-4 text-xs font-semibold text-left rtl:text-right text-white dark:text-gray-400">
+                            <div className=" flex items-center gap-x-3">
 
                                 <span>Sales Person Name</span>
                             </div>
                         </th>
-                        <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-white dark:text-gray-400">
                             <div className="flex items-center gap-x-3">
 
                                 <span>Invoice</span>
                             </div>
                         </th>
-                        <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <th scope="col" className="px-4 text-xs font-semibold text-left rtl:text-right text-white dark:text-gray-400">
                             <div className="flex items-center gap-x-3">
 
                                 <span>Delete Order</span>
                             </div>
                         </th>
-                        <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <th scope="col" className="border border-gray-300  divide-y divide-gray-200  px-4 text-xs font-semibold text-left rtl:text-right text-white dark:text-gray-400">
                             <div className="flex items-center gap-x-3">
 
                                 <span>Remark</span>
@@ -407,80 +407,80 @@ const OrdersNew = () => {
                 {showAddOrder && (
                     <Portal onClose={() => setShowAddOrder(false)}>
                         <ToastContainer />
-                        <h2 className="text-lg font-medium text-gray-800 dark:text-white mb-4">Add New Order</h2>
+                        <h2 className="text-lg font-medium text-white dark:text-white mb-4 ">Add New Order</h2>
 
                         <div className='flex whitespace-nowrap'>
-                            <strong className='font-thin text-xs mt-2'>Amount Due </strong>
+                            <strong className='font-thin text-xs mt-2 text-white'>Amount Due </strong>
                             <input
                                 type="number"
                                 name="amountDue"
                                 value={formData.amountDue}
                                 onChange={handleAddInput}
-                                className="ml-3 border block w-full rounded mb-2 px-3 py-1 my-1 text-xs font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
+                                className="ml-3 border block w-full text-white bg-[#494F55]  rounded mb-2 px-3 py-1 my-1 text-xs font-normal text-left rtl:text-right  dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
                                 placeholder="Enter Amount"
                             />
                         </div>
 
                         <div className='flex whitespace-nowrap'>
-                            <strong className='font-thin text-xs mt-2'>Date of Order</strong>
+                            <strong className='font-thin text-xs mt-2 text-white'>Date of Order</strong>
                             <input
                                 type="date"
                                 name="date"
                                 value={formData.date}
                                 onChange={handleAddInput}
-                                className="ml-1 border block w-full rounded mb-2 px-3 py-1 my-1 text-xs font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
+                                className="ml-1 border block w-full bg-[#494F55] rounded mb-2 px-3 py-1 my-1 text-xs font-normal text-left rtl:text-right text-white dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
                                 placeholder="Enter Amount"
                             />
                         </div>
 
                         <div className='flex whitespace-nowrap'>
-                            <strong className='font-thin text-xs mt-2'>Total Amount</strong>
+                            <strong className='font-thin text-xs mt-2 text-white'>Total Amount</strong>
                             <input
                                 type="number"
                                 name="totalAmount"
                                 value={formData.totalAmount}
                                 required
                                 onChange={handleAddInput}
-                                className="ml-1 border block w-full rounded mb-2 px-3 py-1 my-1 text-xs font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
+                                className="ml-1 border block w-full bg-[#494F55] rounded mb-2 px-3 py-1 my-1 text-xs font-normal text-left rtl:text-right text-white dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
                                 placeholder="Enter Amount"
                             />
                         </div>
 
                         <div className='flex whitespace-nowrap'>
-                            <strong className='font-thin text-xs mt-2'>Invoice ID</strong>
+                            <strong className='font-thin text-xs mt-2 text-white'>Invoice ID</strong>
                             <input
                                 type="text"
                                 name="invoiceId"
                                 value={formData.invoiceId}
                                 required
                                 onChange={handleAddInput}
-                                className="ml-6 border block w-full rounded mb-2 px-3 py-1 my-1 text-xs font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
+                                className="ml-6 border block w-full bg-[#494F55] rounded mb-2 px-3 py-1 my-1 text-xs font-normal text-left rtl:text-right text-white dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
                                 placeholder="Enter Amount"
                             />
                         </div>
 
                         <div className='flex whitespace-nowrap'>
-                            <strong className='font-thin text-xs mt-2'>Channel</strong>
+                            <strong className='font-thin text-xs mt-2 text-white'>Channel</strong>
                             <input
                                 type="text"
                                 name="channel"
                                 value={formData.channel}
                                 required
                                 onChange={handleAddInput}
-                                className="ml-8 border block w-full rounded text-xs mb-2 px-3 py-1 my-1 font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
+                                className="ml-8 border block w-full bg-[#494F55] rounded text-xs mb-2 px-3 py-1 my-1 font-normal text-left rtl:text-right text-white dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
                                 placeholder="Provide channel of Sales"
                             />
                         </div>
 
                         <div className='flex whitespace-nowrap'>
-                            <strong className='font-thin text-xs mt-2'>Salesperson</strong>
+                            <strong className='font-thin text-xs mt-2 text-white'>Salesperson</strong>
                             <input
                                 type="text"
                                 name="salesPersonName"
                                 value={formData.salesPersonName}
                                 required
                                 onChange={handleAddInput}
-                                className="ml-3 border block w-full rounded mb-2 px-3 py-1 my-1 text-xs font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
+                                className="ml-3 border block w-full bg-[#494F55] rounded mb-2 px-3 py-1 my-1 text-xs font-normal text-left rtl:text-right text-white dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
                                 placeholder="Enter Name"
                             />
                         </div>
@@ -488,7 +488,7 @@ const OrdersNew = () => {
                         {/* Order Items Input */}
 
                         <div className='flex whitespace-nowrap'>
-                            <strong className='font-thin text-xs mt-2'>Items</strong>
+                            <strong className='font-thin text-xs mt-2 text-white'>Items</strong>
                             <input
                                 type="text"
                                 value={newItem}
@@ -496,7 +496,7 @@ const OrdersNew = () => {
                                 required
 
                                 placeholder="Enter Order Item"
-                                className="ml-12 border block w-full rounded mb-2 px-3 py-1 my-1 text-xs font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
+                                className="ml-12 border block w-full bg-[#494F55] rounded mb-2 px-3 py-1 my-1 text-xs font-normal text-left rtl:text-right text-white dark:text-gray-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
 
                             />
 
@@ -550,8 +550,8 @@ const OrdersNew = () => {
 
                 {deleteOrder && (
                     <Portal onClose={() => setDeleteOrder(null)}>
-                        <h2 className="text-lg font-medium  text-gray-800 dark:text-white mb-4">⚠️Confirm Delete⚠️</h2>
-                        <p className="text-sm text-gray-600 dark:text-gray-300">Are you sure you want to delete this order?</p>
+                        <h2 className="text-lg font-medium  text-white dark:text-white mb-4">⚠️Confirm Delete⚠️</h2>
+                        <p className="text-sm text-white dark:text-gray-300">Are you sure you want to delete this order?</p>
                         <div className="mt-4 flex justify-center gap-4">
                             <button
                                 onClick={() => handleDeleteOrder(deleteOrder)}
@@ -566,12 +566,12 @@ const OrdersNew = () => {
 
                 {deleteDevice && (
                     <Portal onClose={() => setDeleteDevice(null)}>
-                        <h2 className="text-lg font-medium text-gray-800 dark:text-white mb-4 ">⚠️Confirm Delete⚠️ </h2>
-                        <p className="text-sm text-gray-600 dark:text-gray-300">Are you sure you want to delete this Device?</p>
+                        <h2 className="text-lg font-medium text-white dark:text-white mb-4 ">⚠️Confirm Delete⚠️ </h2>
+                        <p className="text-sm text-white dark:text-gray-300">Are you sure you want to delete this Device?</p>
                         <div className="mt-4 flex justify-center gap-4">
                             <button
                                 onClick={() => handleDelete(deleteDevice)}
-                                className="px-8 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-80"
+                                className="px-5 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 hover:bg-blue-400 rounded-lg focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-80"
                             >
                                 Confirm
                             </button>
@@ -592,67 +592,67 @@ const OrdersNew = () => {
                                 className={order.isDeleted ? 'opacity-50 pointer-events-none' : ''}
 
                             >
-                                <td className="px-2 py-2 text-xs font-medium text-gray-700 whitespace-nowrap">
+                                <td className="border border-gray-300  divide-y divide-gray-200 px-2 py-2 text-xs font-medium  whitespace-nowrap">
                                     <div className="inline-flex items-center gap-x-3">
                                         <div className="flex items-center ">
-                                            <h2 className="font-medium text-gray-800 dark:text-white ">{order.id}</h2>
+                                            <h2 className="font-medium text-white dark:text-white ">{order.id}</h2>
                                         </div>
                                     </div>
                                 </td>
 
-                                <td className="px-1 py-2 text-xs whitespace-nowrap">
-                                    <div className="flex items-center ">
+                                <td className="border border-gray-300  divide-y divide-gray-200 px-1 py-2 text-xs whitespace-nowrap">
+                                    <div className="flex items-center text-white ">
                                         {order.date}
                                     </div>
                                 </td>
 
-                                <td className="px-1 py-2 text-xs whitespace-nowrap">
-                                    <div className="flex items-center ">
+                                <td className="border border-gray-300  divide-y divide-gray-200 px-1 py-2 text-xs whitespace-nowrap">
+                                    <div className="flex items-center text-white ">
                                         {order.orderItems.join(', ')}
                                     </div>
                                 </td>
 
-                                <td className="px-1 py-2 text-xs whitespace-nowrap">
-                                    <div className="flex items-center ">
+                                <td className="border border-gray-300  divide-y divide-gray-200 px-1 py-2 text-xs whitespace-nowrap">
+                                    <div className="flex items-center text-white ">
                                         {order.totalAmount}
                                     </div>
                                 </td>
 
-                                <td className="px-1 py-2 text-xs whitespace-nowrap">
-                                    <div className="flex items-center ">
+                                <td className="border border-gray-300  divide-y divide-gray-200 px-1 py-2 text-xs whitespace-nowrap">
+                                    <div className="flex items-center text-white">
                                         {order.amountDue}
                                     </div>
                                 </td>
 
-                                <td className="px-1 py-2 text-xs whitespace-nowrap">
-                                    <div className="flex items-center ">
+                                <td className="border border-gray-300  divide-y divide-gray-200 px-1 py-2 text-xs whitespace-nowrap">
+                                    <div className="flex items-center text-white">
                                         {order.invoiceId}
                                     </div>
                                 </td>
 
-                                <td className="px-1 py-2 text-xs whitespace-nowrap">
-                                    <div className="flex items-center ">
+                                <td className="border border-gray-300  divide-y divide-gray-200 px-1 py-2 text-xs whitespace-nowrap">
+                                    <div className="flex items-center text-white">
                                         {order.channel}
                                     </div>
                                 </td>
 
 
-                                <td className="px-1 py-2 text-xs whitespace-nowrap">
-                                    <div className="flex items-center ">
+                                <td className="border border-gray-300  divide-y divide-gray-200 px-1 py-2 text-xs whitespace-nowrap">
+                                    <div className="flex items-center text-white">
                                         {order.salesPersonName}
                                     </div>
                                 </td>
 
 
-                                <td className="py-2 px-3">
+                                <td className=" py-2 px-3">
                                     {!order.isDeleted && (
                                         <>
                                             <input type="file" id={`fileInput-${order.id}`} className='hidden' onChange={handleFileChange(order.id)} />
                                             <button
                                                 onClick={() => document.getElementById(`fileInput-${order.id}`).click()}
-                                                className="px-1 mr-2 py-1 mt-2 font-medium text-blue-600"
+                                                className=" px-1 mr-2 py-1 mt-2 font-medium text-blue-600"
                                             >
-                                                <FontAwesomeIcon icon={faFileArrowUp} className='text-sm' />
+                                                <FontAwesomeIcon icon={faFileArrowUp} className='text-sm text-white ' />
                                             </button>
                                             {
                                                 order.bills ? (
@@ -661,7 +661,7 @@ const OrdersNew = () => {
                                                             target='_blank'
                                                             rel='noopener noreferrer'
                                                         >
-                                                            <FontAwesomeIcon icon={faDownload} className='text-sm mr-2' />
+                                                            <FontAwesomeIcon icon={faDownload} className='text-sm mr-2 text-white ' />
 
                                                         </a>
 
@@ -671,7 +671,7 @@ const OrdersNew = () => {
                                             }
                                             <button
                                                 onClick={() => handleFileUpload(order.id)}
-                                                className="px-1 py-1 mt-2 rounded-lg text-xs text-white bg-green-600"
+                                                className=" px-1 py-1 mt-2 rounded-lg text-xs text-white bg-green-600"
                                             >
                                                 Upload
                                             </button>
@@ -691,7 +691,7 @@ const OrdersNew = () => {
                                         </>
                                     )}
                                 </td>
-                                <td className="py-3 px-4 flex justify-center">
+                                <td className=" py-3 px-4 flex justify-center">
                                     <button
                                         onClick={() => setDeleteOrder(order.id)}
                                         className=" text-red-500 px-2 py-1 rounded"
@@ -701,8 +701,8 @@ const OrdersNew = () => {
                                     </button>
                                 </td>
                                 {/*  */}
-                                <td className="px-1 py-2 text-xs whitespace-nowrap">
-                                    <div className="flex items-center ">
+                                <td className="border border-gray-300  divide-y divide-gray-200 px-1 py-2 text-xs whitespace-nowrap">
+                                    <div className="flex items-center text-white ">
 
                                         <OrderRemark orderId={order.id} />
                                     </div>
@@ -711,7 +711,7 @@ const OrdersNew = () => {
                         ))
                     ) : (
                         <tr>
-                            <td colSpan="8" className="py-2 px-4 border text-center">No orders found for this customer.</td>
+                            <td colSpan="8" className="py-2 px-4 border text-center text-white">No orders found for this customer.</td>
                         </tr>
                     )}
 
@@ -722,60 +722,60 @@ const OrdersNew = () => {
 
                 </tbody>
             </table>
-            <h2 className="text-lg font-semibold my-4">Device Details </h2>
-            <table className="min-w-full bg-white border border-gray-300  divide-y divide-gray-200 dark:divide-gray-700">
+            <h2 className="text-lg font-semibold my-4 text-white">Device Details </h2>
+            <table className="min-w-full bg-[#333333] border border-gray-300  divide-y divide-gray-200 dark:divide-gray-700">
                 <thead >
                     <tr>
                         <th scope="col" className=" px-4 py-3 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                            <div className="flex items-center gap-x-3">
+                            <div className="flex text-white items-center gap-x-3">
 
                                 <span>MAC Address</span>
                             </div>
                         </th>
                         <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                            <div className="flex items-center gap-x-3">
+                            <div className="text-white flex items-center gap-x-3">
 
                                 <span>First Start</span>
                             </div>
                         </th>
-                        <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <th scope="col" className="text-white px-4 text-xs font-semibold text-left rtl:text-right  dark:text-gray-400">
                             <div className="flex items-center gap-x-3">
 
                                 <span>Referral Code</span>
                             </div>
                         </th>
-                        <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                            <div className="flex items-center gap-x-3">
+                        <th scope="col" className="text-white px-4 text-xs font-semibold text-left rtl:text-right  dark:text-gray-400">
+                            <div className="text-white flex items-center gap-x-3">
 
                                 <span>IMEI</span>
                             </div>
                         </th>
                         <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                            <div className="flex items-center gap-x-3">
+                            <div className="text-white flex items-center gap-x-3">
 
                                 <span>Recharge Validity</span>
                             </div>
                         </th>
                         <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                            <div className="flex items-center gap-x-3">
+                            <div className="text-white flex items-center gap-x-3">
 
                                 <span>Model</span>
                             </div>
                         </th>
                         <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                            <div className="flex items-center gap-x-3">
+                            <div className="text-white flex items-center gap-x-3">
 
                                 <span>SerialNo</span>
                             </div>
                         </th>
                         <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                            <div className="flex items-center gap-x-3">
+                            <div className="text-white flex items-center gap-x-3">
 
                                 <span>Remark</span>
                             </div>
                         </th>
                         <th scope="col" className=" px-4 text-xs font-semibold text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                            <div className="flex items-center gap-x-3">
+                            <div className="text-white flex items-center gap-x-3">
 
                                 <span>Delete</span>
                             </div>
@@ -793,42 +793,42 @@ const OrdersNew = () => {
 
                         return (
                             <tr key={macAddress} className={rowClass} >
-                                <td className="px-1 py-2 text-xs whitespace-nowrap">
-                                    <div className="flex items-center ">
+                                <td className="px-1 text-white bg-[#494F55] py-2 text-xs whitespace-nowrap">
+                                    <div className=" flex items-center ">
                                         {macAddress || '-'}
                                     </div>
                                 </td>
-                                <td className="px-1 py-2 text-xs whitespace-nowrap">
+                                <td className="px-1 text-white bg-[#494F55] py-2 text-xs whitespace-nowrap">
                                     <div className="flex items-center ">
                                         {first_start || '-'}
                                     </div>
                                 </td>
-                                <td className="px-7 py-2 text-xs whitespace-nowrap">
+                                <td className="px-7 text-white bg-[#494F55] py-2 text-xs whitespace-nowrap">
                                     <div className="flex items-center ">
                                         {referralCode || '-'}
                                     </div>
                                 </td>
-                                <td className="px-1 py-2 text-xs whitespace-nowrap">
+                                <td className="px-1 text-white bg-[#494F55] py-2 text-xs whitespace-nowrap">
                                     <div className="flex items-center ">
                                         {imeiDetail.imei || '-'}
                                     </div>
                                 </td>
-                                <td className="px-6 py-2 text-xs whitespace-nowrap">
+                                <td className="px-6 text-white bg-[#494F55] py-2 text-xs whitespace-nowrap">
                                     <div className="flex items-center ">
                                         {recharge_validity || '-'}
                                     </div>
                                 </td>
-                                <td className="px-6 py-2 text-xs whitespace-nowrap">
+                                <td className="px-6 text-white bg-[#494F55] py-2 text-xs whitespace-nowrap">
                                     <div className="flex items-center ">
                                         {imeiDetail.model || '-'}
                                     </div>
                                 </td>
-                                <td className="px-4 py-2 text-xs whitespace-nowrap">
+                                <td className="px-4 text-white bg-[#494F55] py-2 text-xs whitespace-nowrap">
                                     <div className="flex items-center ">
                                         {imeiDetail.serialNo || '-'}
                                     </div>
                                 </td>
-                                <td className="px-4 py-2 text-xs whitespace-nowrap">
+                                <td className="px-4 bg-[#494F55] py-2 text-xs whitespace-nowrap">
                                     <div className="flex items-center ">
                                         {/* here comes device remark */}
                                         <DeviceRemark imei={imeiDetail.imei} />
@@ -836,7 +836,7 @@ const OrdersNew = () => {
 
                                     </div>
                                 </td>
-                                <td className="px-4 py-2 text-xs whitespace-nowrap">
+                                <td className="px-4 bg-[#494F55] py-2 text-xs whitespace-nowrap">
                                     <div className="flex items-center ">
                                         {!isDeleted && (
                                             <button

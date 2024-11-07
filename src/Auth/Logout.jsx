@@ -20,14 +20,18 @@ const Logout = () => {
   };
 
   return (
+    <>
+    
+
+   
     <Portal
       handleCancel={handleCancel}
     >
-      <div className="flex justify-center items-center">
+      <div className="flex  justify-center items-center">
 
 {/* do CSS here For Mobile View #changes @sushobhitfg */}
 
-        <div className="relative w-72  p-5 overflow-hidden transition-all transform  rtl:text-right dark:bg-gray-900  sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+        <div className="relative w-72   p-5 overflow-hidden transition-all transform  rtl:text-right dark:bg-gray-900  sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
           <div>
             <div className="flex items-center justify-center">
               <span className="mb-4 inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-yellow-50 bg-yellow-100 text-red-600">
@@ -39,8 +43,8 @@ const Logout = () => {
             </div>
 
             <div className="mt-2 text-center">
-              <h3 className="text-lg font-medium leading-6 text-gray-800 capitalize dark:text-white" id="modal-title">Logout Here</h3>
-              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+              <h3 className="text-lg font-medium leading-6 text-white capitalize dark:text-white" id="modal-title">Logout Here</h3>
+              <p className="mt-2 text-white text-sm  dark:text-gray-400">
                 Are you sure you would like to sign out of your account?
               </p>
             </div>
@@ -52,11 +56,11 @@ const Logout = () => {
               Logout
             </button>
             <button onClick={handleCancel} type="button"
-              className="w-full px-4 py-2 mt-2 text-sm font-medium tracking-wide text-gray-700
+              className="w-full px-4 py-2 mt-2 text-sm font-medium tracking-wide bg-red-500
                             capitalize transition-colors duration-300 transform border border-gray-200 rounded-md
                              sm:mt-0 sm:w-auto sm:mx-2 dark:text-gray-200 dark:border-gray-700 
-                             dark:hover:bg-gray-800 hover:bg-gray-100 focus:outline-none focus:ring
-                              focus:ring-gray-300 focus:ring-opacity-40">
+                             dark:hover:bg-gray-800 hover:bg-red-400 focus:outline-none focus:ring
+                              focus:ring-gray-300 focus:ring-opacity-40 text-white">
               Cancel
             </button>
           </div>
@@ -65,6 +69,8 @@ const Logout = () => {
       </div>
 
     </Portal>
+    
+    </>
   );
 };
 

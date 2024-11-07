@@ -248,11 +248,11 @@ const DeviceData = () => {
                     )}
                     </div>
                   <div className="flex justify-center items-center ">
-                  <div className="w-full mt-2 max-w-sm px-4 py-3 bg-white rounded-md shadow-md dark:bg-gray-800">
+                  <div className="w-full mt-2 max-w-sm px-4 py-3 bg-[#333333] rounded-md shadow-md dark:bg-gray-800">
                     <div className="flex-col items-center justify-between">
-                      <h2 className="font-semibold text-sm "> MAC : { macadd }</h2>  
-                      <h2 className="font-semibold text-sm "> Model: {model}</h2>
-                      <h2 className="font-semibold text-sm "> Serial Number: {serialNo}</h2>
+                      <h2 className="font-semibold text-sm text-white"> MAC : { macadd }</h2>  
+                      <h2 className="font-semibold text-sm text-white"> Model: {model}</h2>
+                      <h2 className="font-semibold text-sm text-white "> Serial Number: {serialNo}</h2>
                       
 
                     </div>
@@ -260,101 +260,101 @@ const DeviceData = () => {
                     <div className=" p-0 m-0 ">
 
                       <div>
-                       <label className="text-xs block mb-1">Date</label>
+                       <label className="text-xs block mt-1 mb-1  text-white">Date</label>
                        <input
                         type="text"
                         name="dateTime"
                         value={editData.dateTime || ""}
                         onChange={handleInputChange}
                         disabled={!isEditing}
-                        className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-1 mb-1 bg-[#494F55] text-white  font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                        />
                       </div>
                       <div>
-                       <label className="block mb-1 text-xs">Feedback:</label>
+                       <label className="block mb-1 text-xs text-white">Feedback:</label>
                        <input
                         type="number"
                         name="feedback"
                         value={editData.feedback || ""}
                         onChange={handleInputChange}
                         disabled={!isEditing}
-                        className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-1 mb-1 font-medium border text-white bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                        />
                       </div>
                       <div>
-                       <label className="block mb-1 text-xs">Minimum voltage:</label>
+                       <label className="block mb-1 text-xs text-white">Minimum voltage:</label>
                        <input
                         type="text"
                         name="initials.mnv"
                         value={editData.initials.mnv || ""}
                         onChange={handleInputChange}
                         disabled={!isEditing}
-                        className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-1 mb-1 bg-[#494F55] text-white font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                        />
                      </div>
                       <div>
-                       <label className="block mb-1 text-xs">Phase:</label>
+                       <label className="block mb-1 text-xs text-white">Phase:</label>
                        <select
                         name="initials.phase"
                         value={editData.initials.phase ? "Yes" : "No"}
                         onChange={handleInputChange}
                         disabled={!isEditing}
-                        className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-1 mb-1 bg-[#494F55] text-white font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                        >
                         <option value="Yes">Yes</option>
                         <option value="No">No</option>
                        </select>
                       </div>
                       <div>
-                        <label className="block text-xs mb-1">Recharge:</label>
+                        <label className="block text-xs mb-1 text-white">Recharge:</label>
                         <select
                         name="initials.recharge"
                         value={editData.initials.recharge ? "Yes" : "No"}
                         onChange={handleInputChange}
                         disabled={!isEditing}
-                        className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-1 mb-1 font-medium border text-white bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                         >
                         <option value="Yes">Yes</option>
                         <option value="No">No</option>
                         </select>
                      </div>
                      <div>
-                      <label className="block mb-1 text-xs">Motor Instruction:</label>
+                      <label className="block mb-1 text-xs text-white">Motor Instruction:</label>
                       <input
                       type="number"
                         name="instruction.motor"
                         value={editData.instruction.motor ||""}
                         onChange={handleInputChange}
                         disabled={!isEditing}
-                        className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-1 mb-1 font-medium text-white border bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                        
                       </div>
                       <div>
-                      <label className="block mb-1 text-xs">Protection Instruction:</label>
+                      <label className="block mb-1 text-xs text-white">Protection Instruction:</label>
                       <input
                         type="text"
                         name="instruction.protection"
                         value={editData.instruction.protection || ""}
                         onChange={handleInputChange}
                         disabled={!isEditing}
-                        className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-1 mb-1 font-medium bg-[#494F55] text-white border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                       </div>
                       <div>
-                      <label className="block mb-1 text-xs">Mode:</label>
+                      <label className="block mb-1 text-xs text-white">Mode:</label>
                         <input
                           type="text"
                           name="mode"
                           value={editData.mode || ""}
                           onChange={handleInputChange}
                           disabled={!isEditing}
-                          className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="w-full p-1 mb-1 font-medium border text-white bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                         />
                        </div>
                     
                       <div>
-                      <label className="block mb-1 text-xs">Model:</label>
+                      <label className="block mb-1 text-xs text-white">Model:</label>
                       <input
                         type="text"
                         name="model"
@@ -362,7 +362,7 @@ const DeviceData = () => {
 
                         onChange={handleInputChange}
                         disabled={!isEditing}
-                        className="w-full p-1 mb-1 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-1 mb-1 font-medium border text-white bg-[#494F55] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                        </div>
                                         
@@ -376,15 +376,15 @@ const DeviceData = () => {
 
                   {/* card 2 starts */}
 
-                 <div className="w-full  ml-5 max-w-sm px-4 py-3  bg-white rounded-md shadow-md dark:bg-gray-800">
+                 <div className="w-full  ml-5 max-w-sm px-4 py-3 bg-[#333333]  rounded-md shadow-md dark:bg-gray-800">
 
                     <div className="flex items-center justify-between">
-                      <h2 className="font-semibold text-sm mb-2"> Protection</h2>
+                      <h2 className="font-semibold text-sm mb-2 text-white"> Protection</h2>
                     </div>
 
                   <div className=" p-0 m-0">
                     <div>
-                      <label className="block mb-2 text-xs">Network:</label>
+                      <label className="block mb-2 text-xs text-white">Network:</label>
                       <input
                         type="text"
                         name="network"
@@ -392,12 +392,12 @@ const DeviceData = () => {
 
                         onChange={handleInputChange}
                         disabled={!isEditing}
-                        className="w-full p-2 mb-2 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full bg-[#494F55] text-white p-2 mb-2 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                     </div>
-                    <h2 className="text-sm font-bold mb-2 "> Initials</h2>
+                    <h2 className="text-sm font-bold mb-3 text-white "> Initials</h2>
                     <div>
-                      <label className="block mb-2 text-xs">Power Start Time:</label>
+                      <label className="block mb-2 text-white text-xs">Power Start Time:</label>
                       <input
                         type="text"
                         name="powerStartTime"
@@ -405,25 +405,25 @@ const DeviceData = () => {
 
                         onChange={handleInputChange}
                         disabled={!isEditing}
-                        className="w-full p-2 mb-2 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-2 mb-2 text-white bg-[#494F55] font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                     </div>
                     <div>
-                      <label className="block mb-2 text-xs">Red Phase :</label>
+                      <label className="block mb-2 text-white text-xs">Red Phase :</label>
                       <select
                         type="text"
                         name="r"
                         value={editData.r ? "Yes" : "No"}
                         onChange={handleInputChange}
                         disabled={!isEditing}
-                        className="w-full p-2 mb-2 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-2 mb-2 text-white bg-[#494F55] font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                       >
                         <option value="Yes">Yes</option>
                         <option value="No">No</option>
                       </select>
                     </div>
                     <div>
-                      <label className="block mb-3 text-xs">Source:</label>
+                      <label className="block mb-3 text-white text-xs">Source:</label>
                       <input
                         type="text"
                         name="source"
@@ -432,11 +432,11 @@ const DeviceData = () => {
 
                         onChange={handleInputChange}
                         disabled={!isEditing}
-                        className="w-full p-2 mb-2 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-2 mb-2 text-white bg-[#494F55] font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                     </div>
                     <div>
-                      <label className="block mb-2 text-xs">Timer in action:</label>
+                      <label className="block mb-2 text-white  text-xs">Timer in action:</label>
                       <select
                         type="text"
                         name="timerInAction"
@@ -445,14 +445,14 @@ const DeviceData = () => {
 
                         onChange={handleInputChange}
                         disabled={!isEditing}
-                        className="w-full p-2 mb-2 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-2 mb-2 text-white bg-[#494F55] font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                       >
                         <option value="Yes">Yes</option>
                         <option value="No">No</option>
                       </select>
                     </div>
                     <div>
-                      <label className="block mb-2 text-xs">Voltage Fault:</label>
+                      <label className="block mb-2 text-xs text-white">Voltage Fault:</label>
                       <select
                         name="voltageFault"
                         value={editData.voltageFault ? "Yes" : "No"}
@@ -460,20 +460,20 @@ const DeviceData = () => {
 
                         onChange={handleInputChange}
                         disabled={!isEditing}
-                        className="w-full p-2 mb-2 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-2 mb-2 text-white bg-[#494F55] font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                       >
                         <option value="Yes">Yes</option>
                         <option value="No">No</option>
                       </select>
                     </div>
                     <div>
-                      <label className="block mb-2 text-xs">Yellow Fault:</label>
+                      <label className="block mb-2 text-xs text-white">Yellow Fault:</label>
                       <select
                         name="y"
                         value={editData.y ? "Yes" : "No"}
                         onChange={handleInputChange}
                         disabled={!isEditing}
-                        className="w-full p-2 mb-2 font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-2 mb-2 bg-[#494F55] text-white font-medium border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                       >
                         <option value="Yes">Yes</option>
                         <option value="No">No</option>

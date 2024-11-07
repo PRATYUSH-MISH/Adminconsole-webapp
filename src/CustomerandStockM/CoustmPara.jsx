@@ -67,19 +67,19 @@ const {orderId}=useParams()
 
 
         <>
-            <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden my-4">
+            <div className="max-w-md mx-auto bg-[#333333] shadow-lg rounded-lg overflow-hidden my-4">
                 <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">Customer Details</div>
-                    <p className="text-gray-700 text-base"><strong>Email:</strong> {email}</p>
+                    <div className="font-bold text-xl mb-2 text-white">Customer Details</div>
+                    <p className=" text-base text-white"><strong>Email:</strong> {email}</p>
                     {customerDetails && (
                         <>
-                            <p className="text-gray-700 text-base"><strong>Alternate Phone No:</strong> {alternatePhoneNo}</p>
-                            <p className="text-gray-700 text-base"><strong>Billing Address:</strong> {billingAddress}</p>
-                            <p className="text-gray-700 text-base"><strong>Shipping Address:</strong> {shippingAddress}</p>
+                            <p className="text-white text-base"><strong>Alternate Phone No:</strong> {alternatePhoneNo}</p>
+                            <p className="text-white text-base"><strong>Billing Address:</strong> {billingAddress}</p>
+                            <p className="text-white text-base"><strong>Shipping Address:</strong> {shippingAddress}</p>
                             {type === 'Business' && (
                                 <>
-                                    <p className="text-gray-700 text-base"><strong>Business Name:</strong> {businessName}</p>
-                                    <p className="text-gray-700 text-base"><strong>GST No:</strong> {gstNo}</p>
+                                    <p className="text-white text-base"><strong>Business Name:</strong> {businessName}</p>
+                                    <p className="text-white text-base"><strong>GST No:</strong> {gstNo}</p>
                                 </>
                             )}
                         </>

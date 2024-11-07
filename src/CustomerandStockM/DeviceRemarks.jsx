@@ -122,23 +122,23 @@ const DeviceRemark = ({ imei }) => {
                 {isAddingRemark && (
                     <Portal onClose={() => setIsAddingRemark(false)}>
                         <ToastContainer />
-                        <h2 className="text-2xl font-bold mb-4">Add New Remark</h2>
+                        <h2 className="text-2xl font-bold mb-4 text-white">Add New Remark</h2>
                         <div className="mb-4">
-                            <label className="block mb-1">Name</label>
+                            <label className="block mb-1 text-white">Name</label>
                             <input
                                 type="text"
                                 value={remarkName}
                                 onChange={(e) => setRemarkName(e.target.value)}
-                                className="w-full py-2 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="w-full bg-[#333333] tex-white py-2 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 placeholder="Enter your name"
                                 required
                             />
-                            <label className="block mb-1">Message</label>
+                            <label className="block mb-1 text-white">Message</label>
                             <textarea
                                 type="text"
                                 value={newRemark}
                                 onChange={(e) => setNewRemark(e.target.value)}
-                                className="w-full py-2 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="w-full py-2 text-white bg-[#333333] px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 placeholder="Enter your remark"
                                 required
                             />
