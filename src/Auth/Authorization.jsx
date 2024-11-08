@@ -54,11 +54,19 @@ const generatorPassword =()=>{
 
     const handleAssignRole = async () => {
         if (!email || !role) {
-            toast.error('Please fill out both email and role fields.');
+            toast.error('Please fill out both email and role fields.',{
+        theme:"dark",
+        autoClose:2000,
+        
+      });
             return;
         }
         if (role === "") {
-            toast.error("Please select a valid role.");
+            toast.error("Please select a valid role.",{
+        theme:"dark",
+        autoClose:2000,
+        
+      });
             return;
         }
 
@@ -72,14 +80,22 @@ const generatorPassword =()=>{
                 const userEmailKey = email.replace('.', '_');
                 const roleRef = ref(db, `IAM/${userEmailKey}/role`);
                 await set(roleRef, role);
-                toast.success(`Role ${role} assigned to ${email} successfully!`);
+                toast.success(`Role ${role} assigned to ${email} successfully!`,{
+        theme:"dark",
+        autoClose:2000,
+        
+      });
                 setEmail('');  // Clear fields after success
                 setRole('');
                 // Send a welcome email after assigning the role
                 sendMail(email,password);
             } catch (error) {
                 console.error('Error assigning role:', error);
-                toast.error('Failed to assign role.');
+                toast.error('Failed to assign role.',{
+        theme:"dark",
+        autoClose:2000,
+        
+      });
             }
         } else {
             toast.error('Only admins or managers can assign roles. Managers can assign only "manager" or "employee" roles.');
@@ -101,7 +117,11 @@ const generatorPassword =()=>{
             });
         } catch (error) {
             console.error("Error sending email:", error);
-            toast.error("Failed to send email.");
+            toast.error("Failed to send email.",{
+        theme:"dark",
+        autoClose:2000,
+        
+      });
         }
     };
 
