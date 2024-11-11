@@ -1,8 +1,8 @@
 import { ToastContainer, toast } from 'react-toastify';
 import { useEffect, useState } from 'react';
-import { ref, onValue, getDatabase,update, remove, set } from "firebase/database";
-import { ref as storageRef, getStorage, listAll, deleteObject } from "firebase/storage";
-import { db, storage } from '../firebase';
+import { ref, onValue,update, remove, set } from "firebase/database";
+
+import { db,} from '../firebase';
 import Portal from './Portals';
 import CustomerRemark from './CoustmerRemark'
 import { Link } from 'react-router-dom';
